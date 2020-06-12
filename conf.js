@@ -43,7 +43,7 @@ jsproxy_config({
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
         '101.178.workers': 1,
-        //'b.hehe.workers.dev': 1,
+        '101.holdindex.com': 1,
         //'b.lulu.workers.dev': 1,
         //'b.jsproxy.workers.dev': 1,
       }
