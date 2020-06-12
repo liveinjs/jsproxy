@@ -29,7 +29,7 @@ jsproxy_config({
     'mysite': {
       label: '当前站点',
       lines: {
-        '101.holdindex.com': 1,
+       [location.host]: 1,
       }
     },
     // 该节点用于加载大体积的静态资源
