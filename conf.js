@@ -30,8 +30,7 @@ jsproxy_config({
     'mysite': {
       label: '当前节点',
       lines: {
-       [location.host]: 2,
-       '123.118.workers.dev': 1
+       [location.host]: 1,
       }
     },
     // 该节点用于加载大体积的静态资源
