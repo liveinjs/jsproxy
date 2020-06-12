@@ -35,7 +35,7 @@ jsproxy_config({
     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
-      label: '',
+      label: '分流',
       hidden: true,
       lines: {
         // 收费版（高权重）
