@@ -11,23 +11,8 @@ jsproxy_config({
   },
 
   // 节点配置
-  node_map: {
-    'demo-hk': {
-      label: '演示服务-香港节点',
-      lines: {
-        // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
-      }
-    },
-    'demo-sg': {
-      label: '演示服务-新加坡节点',
-      lines: {
-        'node-aliyun-sg.etherdream.com:8443': 1,
-      },
-    },
     'mysite': {
-      label: '当前站点',
+      label: '当前节点',
       lines: {
        [location.host]: 2,
        '123.118.workers.dev': 1
@@ -35,8 +20,8 @@ jsproxy_config({
     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
-      label: '分流',
-      hidden: true,
+      label: '备用节点',
+      hidden: false,
       lines: {
         // 收费版（高权重）
         //'node-cfworker-2.etherdream.com': 4,
